@@ -1,0 +1,36 @@
+.product-tab {
+    border-bottom: 1px solid #ddd;
+    list-style: outside none none;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+  }
+  .product-tab li {
+    display: inline-block;
+  }
+  .product-tab li.active {
+    background: none repeat scroll 0 0 #000;
+  }
+  .product-tab li.active a {
+    color: #fff;
+  }
+  .product-tab li a {
+    color: #222;
+    display: block;
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  .product-tab li a:hover {
+    text-decoration: none;
+  }
+  .product-tab li a:focus {
+    text-decoration: none;
+  }
+
+  .tab-content > .tab-pane {
+    display: none;
+  }
+  
+  .tab-content > .active {
+    display: block;
+  }

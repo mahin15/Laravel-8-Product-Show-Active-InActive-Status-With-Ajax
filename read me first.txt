@@ -1,0 +1,29 @@
+Hello Every One !
+This is A Basic Laravel E-Commerce Web Project with Functional Admin Panel
+In This Project We Are Using Laravel 8
+In This Project We Are Shown Product Show Active Inactive Status with Ajax
+
+Now Check All Steps 
+
+1) First of all In this project We Are Shown in Advance Product Add-Edit-Delete-Show in Manually from Admin Panel
+
+2) Now the main part is Product Active-Inactive status & Shown in Home Page
+
+3) We Are Use Two Font-Awesome icon toggle-on, toggle-off
+
+4) Create a custom only Ajax JS file for product status 
+
+5) From Ajax file copy the url link and set in VerifyCsrfToken.php file
+
+6) Create a OOP function class in Admin\ProductController.php
+
+7) A Php My Admin Sql Database file are given in a separate file.
+
+8) Here's Important Admin Information
+Admin Dashboard URL 
+http://127.0.0.1:8000/admin/login
+email: admin@gmail.com
+password: 12345678
+
+Now here's the Basic E-Commerce Web Project With Functional Admin Panel
+
