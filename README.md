@@ -22,9 +22,13 @@ Now Check All Steps
 7) A Php My Admin Sql Database file are given in a separate file.
 
 8) Here's Important Admin Information
+<br>
 Admin Dashboard URL 
+<br>
 http://127.0.0.1:8000/admin/login
+<br>
 email: admin@gmail.com
+<br>
 password: 12345678
 
 Now here's the Basic E-Commerce Web Project With Functional Admin Panel
