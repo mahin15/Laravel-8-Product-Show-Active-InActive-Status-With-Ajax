@@ -1,4 +1,3 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; 2021-2022 </strong>
-    All rights reserved.
+    <p>Copyright @ 2021 All Right Reserved By <a href="https://www.linkedin.com/in/saieedulmahin/">Saieedul Hasan Mahin</a></p>
   </footer>
