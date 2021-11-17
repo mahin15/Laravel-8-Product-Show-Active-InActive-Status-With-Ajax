@@ -1,8 +1,9 @@
 @php
 use App\Models\Product;
 $getProducts = Product::where(['status' => 1])
-                ->orderBY('id', 'desc')
-                ->get();
+    ->orderBY('id', 'desc')
+    ->limit(7)
+    ->get();
 @endphp
 @extends('layouts.master')
 @section('content')
@@ -119,23 +120,24 @@ $getProducts = Product::where(['status' => 1])
         </div>
     </div>
     <!-- end trending -->
-    
-        <!-- our brand -->
-        <div class="brand">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="title">
-                            <h2>Featured <strong class="black">Products</strong></h2>
 
-                        </div>
+    <!-- Feature Product Start -->
+
+    <div class="brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Latest <strong class="black">Products</strong></h2>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        @if (!empty($getProducts))
+    @if (!empty($getProducts))
 
         <div class="container-fluid">
             <div class="brand-bg">
@@ -161,12 +163,96 @@ $getProducts = Product::where(['status' => 1])
 
                     @endforeach
 
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                        <div class="brand-box">
+                         <p class=""> <i class="fa fa-th"></i></p>
+                            <h5><a href="{{ url('/') }}">CAN'T DECIDE ? </a></h5>
+                            <h5>Show All Products!</h5>
+                            <button class="btn border-btn more-black" value="All properties">All Products</button>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
     @endif
 
-    <!-- end our brand -->
+    <!-- end Feature Product -->
+
+
+    <!-- Latest Product Start -->
+
+    <div class="brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>Featured <strong class="black">Products</strong></h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @if (!empty($getProducts))
+
+        <div class="container-fluid">
+            <div class="brand-bg">
+                <div class="row">
+
+                    @foreach ($getProducts as $product)
+
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="brand-box">
+                                <i><img src="{{ asset('images/product_images/medium/' . $product['image']) }}" /></i>
+
+                                <h3><a href="{{ url('/product/' . $product['id']) }}">{{ $product['name'] }}</a>
+                                </h3>
+
+                                @if ($product['discount_price'] > 0)
+                                    <ins>{{ $product['discount_price'] }} BDT</ins>
+                                    <del>{{ $product['price'] }} BDT</del>
+                                @else
+                                    <ins>{{ $product['price'] }} BDT</ins>
+                                @endif
+                            </div>
+                        </div>
+
+                    @endforeach
+
+                    {{-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                    <div class="box-tree more-proerty text-center">
+                        <div class="item-tree-icon">
+                            <i class="fa fa-th"></i>
+                        </div>
+                        <div class="more-entry overflow">
+                            <h5><a href="{{url('/')}}">CAN'T DECIDE ? </a></h5>
+                            <h5 class="tree-sub-ttl">Show All Products!</h5>
+                            <button class="btn border-btn more-black" value="All properties">All Products</button>
+                        </div>
+                    </div>
+                </div> --}}
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                        <div class="brand-box">
+                         <p class=""> <i class="fa fa-th"></i></p>
+                            <h5><a href="{{ url('/') }}">CAN'T DECIDE ? </a></h5>
+                            <h5>Show All Products!</h5>
+                            <button class="btn border-btn more-black" value="All properties">All Products</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    @endif
+
+    <!-- end Latest Product -->
 
 @endsection

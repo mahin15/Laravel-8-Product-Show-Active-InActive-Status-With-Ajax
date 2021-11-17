@@ -1082,3 +1082,21 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .pagination > li > a, .pagination > li > span {
   color: #000;
 }
+
+.box-tree .item-tree-icon i{
+    font-size: 3em;
+    cursor:     pointer;    
+}
+.box-tree .item-tree-icon{
+    padding-top:35%; 
+}
+.box-tree .item-tree-icon i:hover{
+    color: #D27E04;  
+}
+.more-entry a{
+    color: #000;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}

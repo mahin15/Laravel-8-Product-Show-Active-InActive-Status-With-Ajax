@@ -293,6 +293,12 @@
      .product-detail-side span {
         font-size: 19px;
     }
+    .box-tree .item-tree-icon {
+        padding-top: 20%;
+    }
+    .more-proerty{
+        padding-bottom: 35px;
+    }
 }
  @media (max-width: 575px) {
      .header {

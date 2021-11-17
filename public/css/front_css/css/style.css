@@ -1981,7 +1981,9 @@ margin-bottom: 29px;
  	text-align: center;
  	padding: 25px 20px 25px 20px;
  	text-align: center;
-
+ }
+ .brand-box .item-tree-icon{
+	padding-top:35%; 
  }
 
  .brand-bg .brand-box:hover {
@@ -1989,7 +1991,7 @@ margin-bottom: 29px;
  }
 
 .brand-bg .brand-box i {
-    height: 290px;
+    /* height: 290px; */
     float: left;
     width: 100%;
     display: flex;
@@ -2777,3 +2779,6 @@ a.article:hover {
 
 
 
+.iconnn{
+	font-size	: 20px;
+}
