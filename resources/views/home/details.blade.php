@@ -6,8 +6,9 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="img_box">
-                        <figure><img src="{{ asset('images/product_images/medium/' . $productDetails['image']) }}"
-                                alt="#" /></figure>
+                        <figure>
+                            <a href="{{ asset('images/product_images/medium/' . $productDetails['image']) }}"><img src="{{ asset('images/product_images/medium/' . $productDetails['image']) }}" alt="#" /></a>
+                            </figure>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 product_detail_side">
@@ -166,8 +167,4 @@
             </div>
         </div>
     </div>
-
-
-
-
 @endsection

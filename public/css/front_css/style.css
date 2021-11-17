@@ -1034,7 +1034,6 @@ table.shop_table td.product-remove a {
   text-transform: uppercase;
 }
 
-
 table.shop_table td.product-remove a:hover {color: #fff;background: red;text-decoration: none}
 table.shop_table td.product-name a{color: #222;}
 table.shop_table td.product-name a:hover {color: #000;text-decoration: none}
